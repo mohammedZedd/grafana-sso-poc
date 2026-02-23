@@ -1,0 +1,41 @@
+/* frontend/src/App.css */
+.App {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+button:disabled {
+  opacity: 0.6;
+}
+
+
+details summary {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+details summary:hover {
+  background-color: #dee2e6;
+}
