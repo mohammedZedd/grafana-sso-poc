@@ -1,9 +1,6 @@
-# Env files
-.env
+# Env secrets
+.env*
 .env.local
-.env.*.local
-*.env
-!.env.example  # On garde l'exemple sans secrets
 
 # Node
 node_modules/
@@ -14,14 +11,16 @@ build/
 # Python
 __pycache__/
 venv/
-.venv/
 *.pyc
+.pytest_cache/
 
 # Grafana
 data/
 grafana.db
+plugins/
+public/
+grafana.ini  # Si sensible
 
-# Logs/IDE
-*.log
+# OS
 .DS_Store
-.vscode/
+Thumbs.db
