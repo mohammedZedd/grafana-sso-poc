@@ -1,0 +1,27 @@
+# Env files
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example  # On garde l'exemple sans secrets
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+
+# Python
+__pycache__/
+venv/
+.venv/
+*.pyc
+
+# Grafana
+data/
+grafana.db
+
+# Logs/IDE
+*.log
+.DS_Store
+.vscode/
